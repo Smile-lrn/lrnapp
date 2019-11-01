@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+有状态组件  是一个类 可以使用state（必须继承于component） 有生命周期
+          存储数据 并对数据进行增删改查 或需使用生命周期的时候
+
+无状态组件  可以看作是一个函数 不可以使用state 无生命周期
+
+
+- 生命周期的钩子函数
+    - constructor()：  调用父级super（props）  设置state
+        - 
+
+    - componentWillMount()： 修改状态
+    - render()：创建虚拟dom 更新dom
+    - componentDidmount() 组件渲染完毕，不可再更新状态，否则会陷入render死循环
